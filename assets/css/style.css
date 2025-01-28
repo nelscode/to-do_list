@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0 0 0;
+    align-items: self-start;
+}
+
+.container {
+    border: 3px solid black;
+    padding: 0.6rem;
+    width: 23rem;
+    max-width: 23rem;
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: 0.9rem;
+}
+
+.grupo-entrada {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.input-nova-tarefa, .btn-add-tarefa {
+    padding: 0.4rem;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.input-nova-tarefa {
+    flex-grow: 1;
+}
+
+.btn-add-tarefa {
+    cursor: pointer;
+    background-color: white;
+    font-weight: 600;
+}
+
+.btn-add-tarefa:hover {
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tarefas {
+    list-style-position: inside;
+}
+
+.tarefas li {   
+    line-height: 1.5rem;
+    margin-bottom: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btnApagar {
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+
+/* Estilo do checkbox padrão */
+input[type="checkbox"].marcar {
+    appearance: none; 
+    width: 15px; 
+    height: 15px; 
+    border: 2px solid black; 
+    border-radius: 4px; 
+    background-color: transparent;
+    cursor: pointer; 
+    display: inline-block; 
+    transition: background-color 0.2s, border-color 0.2s; 
+}
+
+input[type="checkbox"].marcar:checked {
+    background-color: black;
+    border-color: black; 
+}
+
+/* Media queries */
+
+@media (max-width: 412px){
+    .container {
+        width: 22rem;
+    }
+}
+
+@media (max-width: 360px){
+    .container {
+        width: 20rem;
+    }
+
+    .titulo {
+        font-size: 0.7rem;
+    }
+
+    .input-nova-tarefa, .btn-add-tarefa {
+        padding: 0.3rem;
+    }
+}
