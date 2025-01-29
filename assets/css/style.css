@@ -80,7 +80,6 @@ body {
     padding: 0.2rem;
 }
 
-/* Estilo do checkbox padrão */
 input[type="checkbox"].marcar {
     appearance: none; 
     width: 15px; 
