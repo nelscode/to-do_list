@@ -59,6 +59,7 @@ btnAddTarefa.addEventListener('click', () => {
 // Evento que captura valor digitado no input a partir da tecla enter
 inputNovaTarefa.addEventListener('keypress', (e) => { 
    if(e.keyCode === 13){
+    if(!inputNovaTarefa.value) return;
     criarTarefa(inputNovaTarefa.value);
    }
    
