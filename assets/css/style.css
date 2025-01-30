@@ -5,12 +5,11 @@
 }
 
 body {
-    height: 100vh;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     padding: 5rem 0 0 0;
-    align-items: self-start;
 }
 
 .container {
