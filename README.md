@@ -11,3 +11,6 @@ Acredito que maioria dos iniciantes em programação acabam uma hora ou outra co
 - HTML
 - CSS
 - JavaScript
+
+## Deploy do Projeto:
+**Link:** https://todolistnelsonmartins.netlify.app/
